@@ -1,0 +1,4 @@
+rootProject.name = 'internal-theme-module-sample'
+include 'theme'
+include 'app'
+

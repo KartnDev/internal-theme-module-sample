@@ -1,0 +1,19 @@
+archivesBaseName = 'theme'
+
+dependencies {
+    api 'io.jmix.ui:jmix-ui:1.2.4'
+//    compileOnly 'io.jmix.ui:jmix-ui-widgets:1.2.4'
+}
+
+jar {
+    // pack client Java sources
+    with copySpec {
+        from sourceSets.main.allJava
+        include "com/ats/psz/theme/theme/**"
+        duplicatesStrategy = DuplicatesStrategy.WARN
+    }
+
+    manifest {
+        attributes(['Vaadin-Stylesheets': 'VAADIN/addons/theme/theme.scss'])
+    }
+}

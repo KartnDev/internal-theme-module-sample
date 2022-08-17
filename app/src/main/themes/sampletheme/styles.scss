@@ -1,0 +1,9 @@
+@import "sampletheme-defaults";
+@import "addons";
+@import "sampletheme";
+
+.sampletheme {
+  @include addons;
+  @include sampletheme;
+  @include theme;
+}
