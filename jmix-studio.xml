@@ -72,6 +72,10 @@
       </entry>
     </moduleSettings>
   </component>
+  <component name="JmixLiquibaseChangesConfig">
+    <exclude-change idName="USER_" tagName="createTable" />
+    <exclude-change idName="IDX_USER__ON_USERNAME" tagName="createIndex" />
+  </component>
   <component name="JmixPluginProjectSettings">
     <option name="savedDbProperties">
       <list>
